@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Siswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .logo {
+            width: 100px;
+        }
+        .menu {
+            text-align: right;
+        }
+        .menu a {
+            margin-left: 15px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .center-text {
+            text-align: center;
+        }
+        .left-text {
+            text-align: left;
+        }
+        .form-input {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-input label {
+            margin-bottom: 5px;
+        }
+        .form-input input[type="text"],
+        .form-input input[type="password"],
+        .form-input input[type="date"],
+        .form-input input[type="radio"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="logo">LOGO SEKOLAH</span>
+        <div class="menu">
+            <a href="#">File Master</a>
+            <a href="#">File Transaksi</a>
+            <a href="#">File Laporan</a>
+            <a href="#">Logout,xxx</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="center-text">Input Data Siswa</h2>
+        <form id="inputForm" class="left-text" action="input_data.php" method="post">
+            <div class="form-input">
+                <label for="nis">NIS:</label>
+                <input type="text" id="nis" name="nis" required>
+                <label for="nm_siswa">Nama Siswa:</label>
+                <input type="text" id="nm_siswa" name="nm_siswa" required>
+                <label for="tmp_lahir">Tempat Lahir:</label>
+                <input type="text" id="tmp_lahir" name="tmp_lahir" required>
+                <label for="tgl_lahir">Tanggal Lahir:</label>
+                <input type="date" id="tgl_lahir" name="tgl_lahir" required>
+                <label for="jkel">Jenis Kelamin:</label>
+                <input type="text" id="jkel" name="jkel" required>
+                <label for="alamat">Alamat:</label>
+                <input type="text" id="alamat" name="alamat" required>
+                <label for="telp">Telepon:</label>
+                <input type="text" id="telp" name="telp" required>
+                <label for="nm_wali">Nama Wali:</label>
+                <input type="text" id="nm_wali" name="nm_wali" required>
+                <label for="kd_kelas">Kode Kelas:</label>
+                <input type="text" id="kd_kelas" name="kd_kelas" required>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="buttons">
+                <button type="submit">Input Data</button>
+                <button type="button">Kembali</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
